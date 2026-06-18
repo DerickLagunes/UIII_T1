@@ -12,7 +12,8 @@
     <main>
         <% Persona p1 = (Persona) request.getAttribute("persona"); %>
         <h1>Bienvenido: <%= p1.getNombre() + " " + p1.getApellido() %></h1>
-        <img src="<%=p1.getFoto()%>" />
+        <img src="<%=p1.getFoto()%>" width="200"/>
+        <a href="index.jsp">regresar</a>
     </main>
 </body>
 </html>
